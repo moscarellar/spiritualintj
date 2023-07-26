@@ -68,13 +68,16 @@ DEBUG = 'DEV' in os.environ
 
 
 ALLOWED_HOSTS = [
-   os.environ.get('ALLOWED_HOST'),
-   'localhost',
+    os.environ.get('ALLOWED_HOST'),
+    'localhost',
+    'spiritualintjapi-12e1bec53399.herokuapp.com',
     '8000-moscarellar-spiritualin-dikoxghdxfi.ws-us102.gitpod.io',
 ]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://intjherokuapi-278e99214e97.herokuapp.com/', '']
+CSRF_TRUSTED_ORIGINS = ['https://spiritualintjapi-12e1bec53399.herokuapp.com/', '']
+
+
 
 if 'CLIENT_ORIGIN' in os.environ:		
     CORS_ALLOWED_ORIGINS = [		
